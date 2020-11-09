@@ -9,6 +9,8 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 urlpatterns = [
     path("",views.returnRedirect, name = "returnRedirect"),
     path("home", views.index, name = "home"),
+    path("IN/home", views.indexIn, name = "homeIN"),
+    path("IN/live", views.liveIn, name = "liveIN"),
     path("live",views.live, name = "live"),
     path("tomato-area", views.tomato, name = "tomato-area"),
 ]
